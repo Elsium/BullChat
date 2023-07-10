@@ -1,0 +1,54 @@
+.msg {
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 60%;
+  min-width: 10%;
+  box-shadow: 0 0 10px #d0d0d0;
+  margin: 10px 0;
+  line-height: 25px;
+}
+.First {
+  align-self: flex-start;
+}
+.Second {
+  align-self: flex-end;
+  color: white;
+  background: #ff9829;
+}
+
+.typing {
+}
+
+.dots {
+  display: flex;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 0 2px;
+  background-color: #333;
+  animation: typing-dots 1s infinite;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes typing-dots {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-6px);
+    opacity: 0;
+  }
+}
+
